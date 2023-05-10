@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Todo list</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>My Todo List</header>
+        <div class="inputField">
+            <input type="text" placeholder="Todo Item">
+            <button> <i class="fas fa-plus"></i> </button>
+        </div>
+        <ul class="todoList">
+            
+        </ul>
+        <div class="footer">
+            <span><span class="pendingTasks"></span></span>
+            <button>Clear All</button>
+          </div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDFMYOR3JX38jvjfqitNJVDDpaeep7oDuU",
+          authDomain: "todo-6cd04.firebaseapp.com",
+          projectId: "todo-6cd04",
+          storageBucket: "todo-6cd04.appspot.com",
+          messagingSenderId: "810105534961",
+          appId: "1:810105534961:web:9f53328237fa0a3b376c50",
+          measurementId: "G-6EQ9DGK5KZ"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
